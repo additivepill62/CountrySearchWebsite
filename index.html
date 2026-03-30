@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <p>Use the input field to search</p>
-    <input type="text" id="inputFld">
-    <button id="btn" >Search</button>
+    <style>
+        #contentContainer{
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+    </style>
+    <div id="contentContainer">
+        <p>Use the input field to search</p>
+        <p id="loadingP" style="display: none;">Loading...</p>
+        <input type="text" id="inputFld">
+        <button id="btn" onclick="btnClk()">Search</button>
+    </div>
+    
 
-
+    
     <script src="app.js"></script>
 </body>
 </html>
